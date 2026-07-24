@@ -25,7 +25,7 @@
 
   --max-width: 1180px;
 
-   --preview-caption-gap: 14px;
+   --preview-caption-gap: 0px;
    --preview-caption-padding: 28px 32px;
 }
 
@@ -447,26 +447,18 @@ h3,
 .demo-window {
   overflow: hidden;
 
-  border:
-    1px solid
-    rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius-large);
 
-  border-radius:
-    var(--radius-large);
-
-  background:
-    rgba(19, 24, 42, 0.86);
-
-  box-shadow:
-    var(--shadow);
+  background: rgba(19, 24, 42, 0.86);
+  box-shadow: var(--shadow);
 
   transform:
     perspective(1300px)
     rotateY(-3deg)
     rotateX(2deg);
 
-  transition:
-    transform 300ms ease;
+  transition: transform 300ms ease;
 }
 
 .demo-window:hover {
@@ -480,11 +472,8 @@ h3,
 
 .gif-frame {
   position: relative;
-
   display: grid;
-
   min-height: 390px;
-
   overflow: hidden;
 
   background:
@@ -496,14 +485,6 @@ h3,
     #0e1120;
 
   place-items: center;
-
-   border: 1px solid rgba(255, 255, 255, 0.16);
-   border-radius:
-     var(--radius-large)
-     var(--radius-large)
-     0
-     0;
-   box-shadow: var(--shadow);
 }
 
 .gif-frame img {
@@ -593,11 +574,7 @@ h3,
    margin-top: var(--preview-caption-gap);
    padding: var(--preview-caption-padding);
 
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: var(--radius-medium);
-
-  background: rgba(19, 24, 42, 0.9);
-  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.22);
+   background: rgba(19, 24, 42, 0.9);
 }
 .preview-description-card h2 {
   margin-bottom: 0;
