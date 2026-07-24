@@ -577,7 +577,7 @@ h3,
 
 /* Text underneath GIF */
 
-.demo-caption {
+.preview-description-card {
   display: grid;
   grid-template-columns: 0.72fr 1.28fr;
   gap: 25px;
@@ -591,13 +591,13 @@ h3,
   background: rgba(19, 24, 42, 0.9);
   box-shadow: 0 16px 42px rgba(0, 0, 0, 0.22);
 }
-.demo-caption h2 {
+.preview-description-card h2 {
   margin-bottom: 0;
 
   font-size: 1.3rem;
 }
 
-.demo-caption > p {
+.preview-description-card > p {
   margin: 0;
 
   color: var(--muted);
@@ -1222,7 +1222,7 @@ h3,
     min-height: 260px;
   }
 
-  .demo-caption {
+  .preview-description-card {
     grid-template-columns: 1fr;
   }
 
