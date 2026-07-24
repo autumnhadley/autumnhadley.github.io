@@ -29,7 +29,6 @@
    --preview-caption-padding: 28px 32px;
 
    --project-preview-height: 190px;
-   --project-preview-content-gap: 16px;
 }
 
 
@@ -737,17 +736,13 @@ h3,
 }
 
 .project-card-with-preview {
-  min-height: 0px;
+  min-height: 0;
+  border-color: transparent;
 }
 
 .project-card-with-preview .project-card-content {
   align-self: flex-start;
-
-  margin-top:
-    calc(
-      var(--project-preview-height) +
-      var(--project-preview-content-gap)
-    );
+  margin-top: calc(var(--project-preview-height) + 10px);
 }
 
 .project-number {
