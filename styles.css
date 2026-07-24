@@ -619,7 +619,10 @@ h3,
    Section Headings
 -------------------------------- */
 
-.work-section,
+.work-section {
+  scroll-margin-top: 150px;
+}
+
 .about-section,
 .contact-section {
   padding-block: 105px;
