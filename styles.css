@@ -494,42 +494,6 @@ h3,
   font-size: 0.74rem;
 }
 
-.window-bar p {
-  margin: 0;
-
-  text-align: center;
-}
-
-.window-dots {
-  display: flex;
-
-  gap: 6px;
-}
-
-.window-dots span {
-  width: 8px;
-  height: 8px;
-
-  border-radius: 50%;
-
-  background:
-    rgba(255, 255, 255, 0.24);
-}
-
-.window-status {
-  padding: 5px 9px;
-
-  border:
-    1px solid
-    rgba(154, 242, 203, 0.22);
-
-  border-radius: 999px;
-
-  color: var(--green);
-
-  background:
-    rgba(154, 242, 203, 0.08);
-}
 
 
 /* GIF area */
