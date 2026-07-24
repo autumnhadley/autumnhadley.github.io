@@ -29,6 +29,7 @@
    --preview-caption-padding: 28px 32px;
 
    --project-preview-height: 190px;
+   --project-preview-content-gap: 16px;
 }
 
 
@@ -736,7 +737,17 @@ h3,
 }
 
 .project-card-with-preview {
-  min-height: 570px;
+  min-height: 0px;
+}
+
+.project-card-with-preview .project-card-content {
+  align-self: flex-start;
+
+  margin-top:
+    calc(
+      var(--project-preview-height) +
+      var(--project-preview-content-gap)
+    );
 }
 
 .project-number {
@@ -818,8 +829,6 @@ h3,
 
   height: var(--project-preview-height);
   overflow: hidden;
-
-  border-bottom: 1px solid var(--line);
 
   background:
     linear-gradient(
@@ -1321,7 +1330,7 @@ h3,
   }
 
    .project-card-with-preview {
-     min-height: 560px;
+     min-height: 0px;
    }
 
   .about-card {
