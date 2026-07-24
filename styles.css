@@ -447,21 +447,33 @@ h3,
 .demo-window {
   overflow: hidden;
 
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  border: 1px solid var(--line);
   border-radius: var(--radius-large);
 
-  background: rgba(19, 24, 42, 0.86);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.045),
+      transparent 35%
+    ),
+    var(--card);
+
   box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
 
   transform:
     perspective(1300px)
     rotateY(-3deg)
     rotateX(2deg);
 
-  transition: transform 300ms ease;
+  transition:
+    transform 300ms ease,
+    border-color 220ms ease;
 }
 
 .demo-window:hover {
+  border-color: rgba(169, 140, 255, 0.42);
+
   transform:
     perspective(1300px)
     rotateY(0deg)
