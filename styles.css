@@ -24,6 +24,9 @@
   --shadow: 0 28px 80px rgba(0, 0, 0, 0.36);
 
   --max-width: 1180px;
+
+   --preview-caption-gap: 14px;
+   --preview-caption-padding: 28px 32px;
 }
 
 
@@ -495,7 +498,11 @@ h3,
   place-items: center;
 
    border: 1px solid rgba(255, 255, 255, 0.16);
-   border-radius: var(--radius-large);
+   border-radius:
+     var(--radius-large)
+     var(--radius-large)
+     0
+     0;
    box-shadow: var(--shadow);
 }
 
@@ -581,9 +588,10 @@ h3,
   display: grid;
   grid-template-columns: 0.72fr 1.28fr;
   gap: 25px;
-
-  margin-top: 14px;
-  padding: 24px;
+   align-items: center;
+   
+   margin-top: var(--preview-caption-gap);
+   padding: var(--preview-caption-padding);
 
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: var(--radius-medium);
