@@ -473,29 +473,6 @@ h3,
     rotateX(0deg)
     translateY(-5px);
 }
-
-.window-bar {
-  display: grid;
-
-  grid-template-columns:
-    auto 1fr auto;
-
-  gap: 15px;
-
-  align-items: center;
-
-  padding: 14px 18px;
-
-  border-bottom:
-    1px solid var(--line);
-
-  color: var(--muted);
-
-  font-size: 0.74rem;
-}
-
-
-
 /* GIF area */
 
 .gif-frame {
