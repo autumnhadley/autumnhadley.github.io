@@ -999,6 +999,19 @@ h3,
     rotate(4deg);
 }
 
+ overflow: hidden;
+
+.floating-panel img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.panel-one img {
+  object-position: center top;
+}
+
 
 /* --------------------------------
    About Section
