@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="Explore the artwork and creative process behind selected projects by Autumn Hadley."
+  />
+
+  <title>Creative Work | Autumn Hadley</title>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="creative-work.css" />
+
+  <script src="script.js" defer></script>
+  <script src="creative-work.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <a
+      class="logo"
+      href="index.html"
+      aria-label="Autumn Hadley home"
+    >
+      AH<span>.</span>
+    </a>
+
+    <button
+      class="menu-button"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-navigation"
+    >
+      Menu
+    </button>
+
+    <nav
+      id="site-navigation"
+      class="site-nav"
+      aria-label="Main navigation"
+    >
+      <a href="index.html#work">Work</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+
+      <a
+        class="nav-resume"
+        href="assets/autumn-hadley-resume.pdf"
+        target="_blank"
+        rel="noopener"
+      >
+        Résumé
+      </a>
+    </nav>
+  </header>
+
+  <main class="creative-page section-shell">
+    <a
+      class="creative-back"
+      href="index.html#work"
+    >
+      <span aria-hidden="true">
+        ←
+      </span>
+
+      Back to selected work
+    </a>
+
+    <h1>
+      Creative
+      <span class="gradient-text">
+        Work.
+      </span>
+    </h1>
+
+    <p class="creative-intro">
+      A closer look at the artwork, experiments, and decisions
+      behind each project.
+    </p>
+
+    <section
+      class="creative-gallery"
+      aria-label="Project gallery"
+    >
+      <!--
+        Update each cover image, category, and title here.
+        The matching carousel and notes are below.
+      -->
+
+      <button
+        class="creative-tile"
+        type="button"
+        data-project="project-01"
+        aria-haspopup="dialog"
+      >
+        <img
+          src="assets/Render1.png"
+          alt=""
+        />
+
+        <span class="creative-tile-caption">
+          <span class="creative-tile-type">
+            3D Design
+          </span>
+
+          <span class="creative-tile-title">
+            Stylized Arcade
+          </span>
+
+          <span
+            class="creative-tile-arrow"
+            aria-hidden="true"
+          >
+            ↗
+          </span>
+        </span>
+      </button>
+
+      <button
+        class="creative-tile"
+        type="button"
+        data-project="project-02"
+        aria-haspopup="dialog"
+      >
+        <img
+          src="assets/CraneImage.png"
+          alt=""
+        />
+
+        <span class="creative-tile-caption">
+          <span class="creative-tile-type">
+            Illustration
+          </span>
+
+          <span class="creative-tile-title">
+            Crane Game Icons
+          </span>
+
+          <span
+            class="creative-tile-arrow"
+            aria-hidden="true"
+          >
+            ↗
+          </span>
+        </span>
+      </button>
+
+      <button
+        class="creative-tile"
+        type="button"
+        data-project="project-03"
+        aria-haspopup="dialog"
+      >
+        <img
+          src="assets/NorthernPatches.jpg"
+          alt=""
+        />
+
+        <span class="creative-tile-caption">
+          <span class="creative-tile-type">
+            Graphic Design
+          </span>
+
+          <span class="creative-tile-title">
+            Patch Designs
+          </span>
+
+          <span
+            class="creative-tile-arrow"
+            aria-hidden="true"
+          >
+            ↗
+          </span>
+        </span>
+      </button>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <p>
+      Designed and built by Autumn Hadley.
+    </p>
+  </footer>
+
+  <dialog
+    class="creative-dialog"
+    aria-labelledby="creative-project-title"
+  >
+    <form
+      class="creative-dialog-bar"
+      method="dialog"
+    >
+      <button
+        class="creative-icon-button"
+        type="submit"
+        aria-label="Close project"
+        autofocus
+      >
+        ×
+      </button>
+    </form>
+
+    <div class="creative-detail">
+      <section
+        class="creative-carousel"
+        aria-label="Project images"
+      >
+        <div class="creative-slides"></div>
+
+        <div class="creative-carousel-controls">
+          <button
+            class="creative-icon-button"
+            type="button"
+            data-direction="-1"
+            aria-label="Previous image"
+          >
+            ←
+          </button>
+
+          <p
+            class="creative-slide-status"
+            role="status"
+          ></p>
+
+          <button
+            class="creative-icon-button"
+            type="button"
+            data-direction="1"
+            aria-label="Next image"
+          >
+            →
+          </button>
+        </div>
+      </section>
+
+      <div class="creative-process">
+        <p class="eyebrow">
+          Behind the work
+        </p>
+
+        <h2 id="creative-project-title"></h2>
+
+        <div class="creative-process-copy"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <!--
+    Replace each carousel image's source, alternative text,
+    and caption here.
+
+    Keep at least one figure in each project template.
+  -->
+
+  <!-- Project 01: Stylized Arcade -->
+  <template id="project-01">
+    <figure>
+      <video
+        src="assets/FinalRender.mp4"
+        controls
+        playsinline
+        preload="metadata"
+        aria-label="Final render"
+      ></video>
+
+      <figcaption>
+        Final render
+      </figcaption>
+    </figure>
+
+    <figure>
+      <video
+        src="assets/RenderSteps.mp4"
+        controls
+        playsinline
+        preload="none"
+        aria-label="Render steps"
+      ></video>
+
+      <figcaption>
+        Render steps
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img
+        src="assets/TextureImages.png"
+        alt="Texture images used in the render"
+      />
+
+      <figcaption>
+        Textures
+      </figcaption>
+    </figure>
+
+    <div class="project-notes">
+      <p>
+        The goal of this project was to practice creating stylized
+        textures with a hand-painted look, transforming simple gray
+        models into colorful objects full of personality. I used my
+        background in illustration and digital painting to create
+        the textures, then applied UV mapping to make sure they fit
+        correctly onto each 3D model.
+      </p>
+
+      <p>
+        I wanted every object to feel like it belonged in the same
+        environment while still having its own unique style. I
+        imagined this scene as part of an indie game, where the
+        player explores an arcade in search of a missing item needed
+        to progress through the story.
+      </p>
+    </div>
+  </template>
+
+  <!-- Project 02: Crane Game Icons -->
+  <template id="project-02">
+    <figure>
+      <img
+        src="assets/CraneGameIcons.png"
+        alt="Fantasy creature icons created for the crane game"
+      />
+
+      <figcaption>
+        Crane game icons
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img
+        src="assets/ChopsticksCarl.gif"
+        alt="Animation of Chopsticks Carl"
+      />
+
+      <figcaption>
+        Chopsticks Carl
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img
+        src="assets/ChainedFate.gif"
+        alt="Animation of Chained Fate"
+      />
+
+      <figcaption>
+        Chained Fate
+      </figcaption>
+    </figure>
+
+    <div class="project-notes">
+      <p>
+        I was asked to create a collection of icons for crane game
+        software, featuring quirky fantasy creatures designed in my
+        own art style. At the time, I was transitioning from Adobe
+        Illustrator to Affinity Designer, making this the perfect
+        opportunity to explore the new software while building on
+        my illustration skills.
+      </p>
+
+      <p>
+        This project also gave me the chance to practice animation
+        in DaVinci Resolve. By adding movement to the characters'
+        features, I was able to give each creature more personality
+        and bring the illustrations to life. That's one of my
+        favorite parts of creating art, turning a simple character
+        into something that feels alive.
+      </p>
+    </div>
+  </template>
+
+  <!-- Project 03: Patch Designs -->
+  <template id="project-03">
+    <figure>
+      <img
+        src="assets/NorthernPatches.jpg"
+        alt="Northern National Park patch designs"
+      />
+
+      <figcaption>
+        Northern patches
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img
+        src="assets/SouthernPatches.jpg"
+        alt="Southern National Park patch designs"
+      />
+
+      <figcaption>
+        Southern patches
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img
+        src="assets/FinalHats.jpg"
+        alt="Finished hats featuring the patch designs"
+      />
+
+      <figcaption>
+        Finished hats
+      </figcaption>
+    </figure>
+
+    <div class="project-notes">
+      <p>
+        At a previous job, I worked for a company that created
+        apparel for national parks across the United States. During
+        my time there, I designed around 100 patches using the
+        company's existing templates while adding my own creative
+        touches to each design.
+      </p>
+
+      <p>
+        This project gave me the opportunity to experiment with
+        different layouts, create original illustrations, pair
+        fonts, and develop color palettes while maintaining a
+        consistent style across the collection. As much as I enjoyed
+        designing the patches, the most rewarding part has been
+        seeing my work on actual products in stores across the
+        country. I've even collected a few hats featuring my
+        designs, and I look forward to discovering more of them in
+        the future.
+      </p>
+    </div>
+  </template>
+</body>
+</html>
