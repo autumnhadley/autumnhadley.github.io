@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="Quality Systems: a case study in audit workflows, reporting, and data quality by Autumn Hadley."
+  />
+
+  <title>Quality Systems | Autumn Hadley</title>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="quality-systems.css" />
+
+  <script src="script.js" defer></script>
+</head>
+
+<body class="case-study">
+  <header class="site-header">
+    <a
+      class="logo"
+      href="index.html"
+      aria-label="Autumn Hadley home"
+    >
+      AH<span>.</span>
+    </a>
+
+    <button
+      class="menu-button"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-navigation"
+    >
+      Menu
+    </button>
+
+    <nav
+      id="site-navigation"
+      class="site-nav"
+      aria-label="Main navigation"
+    >
+      <a href="index.html#work">Work</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+
+      <a
+        class="nav-resume"
+        href="assets/autumn-hadley-resume.pdf"
+        target="_blank"
+        rel="noopener"
+      >
+        Résumé
+      </a>
+    </nav>
+  </header>
+
+  <main
+    id="top"
+    class="section-shell"
+  >
+    <section
+      class="case-hero"
+      aria-labelledby="case-title"
+    >
+      <h1 id="case-title">
+        Quality
+        <span class="gradient-text">
+          Systems.
+        </span>
+      </h1>
+    </section>
+
+    <nav
+      class="case-contents"
+      aria-label="Case study sections"
+    >
+      <a href="#process">
+        01 - Thought process
+      </a>
+
+      <a href="#stats">
+        02 - Sheet stats
+      </a>
+
+      <a href="#analysis">
+        03 - Graphs &amp; tables
+      </a>
+
+      <a href="#report">
+        04 - Quality report
+      </a>
+
+      <a href="#reflection">
+        05 - Reflection
+      </a>
+    </nav>
+
+    <!-- The Objective -->
+    <section
+      id="process"
+      class="case-section"
+      aria-labelledby="process-title"
+    >
+      <div class="case-section-heading">
+        <p class="eyebrow">
+          01 / The Objective
+        </p>
+
+        <h2 id="process-title">
+          Find a trend. Study it
+        </h2>
+
+        <p>
+          The context, decisions, and reasoning behind the work.
+        </p>
+      </div>
+
+      <div class="case-section-body">
+        <div class="narrative-block">
+          <h3>My approach</h3>
+        </div>
+
+        <ol class="process-steps">
+          <li>
+            <h3>Understand</h3>
+
+            <p>
+              Find the issue affecting the quality of the final
+              result. Create categories to analyze specific issues.
+              Collect a batch of data targeting the issues.
+            </p>
+          </li>
+
+          <li>
+            <h3>Analyze</h3>
+
+            <p>
+              Review and compare the results of the collected data.
+              Create tables and visuals to help understand the
+              trending issues.
+            </p>
+          </li>
+
+          <li>
+            <h3>Improve</h3>
+
+            <p>
+              Share the findings with a detailed report while
+              providing solutions and examples of trending issues
+              to improve the overall quality.
+            </p>
+          </li>
+        </ol>
+
+        <aside
+          class="process-example"
+          aria-labelledby="process-example-title"
+        >
+          <p class="eyebrow">
+            The process in practice
+          </p>
+
+          <h3 id="process-example-title">
+            From a finding to a recommendation
+          </h3>
+
+          <p class="process-example-context">
+            Example: Palia · Hair and headwear compatibility
+          </p>
+
+          <dl class="process-example-details">
+            <div>
+              <dt>
+                Record the observation
+              </dt>
+
+              <dd>
+                A headband clipped into the crown of some hairstyles
+                and was fully hidden by longer bangs. The Main Log
+                recorded this as a clipping defect with severity
+                3 — High.
+              </dd>
+            </div>
+
+            <div>
+              <dt>
+                Compare the findings
+              </dt>
+
+              <dd>
+                Hair accounted for 15 recorded issues rated 1–5,
+                the highest count of any asset category. Comparing
+                these findings helped identify hair interactions
+                with headwear and clothing as a testing priority.
+              </dd>
+            </div>
+
+            <div>
+              <dt>
+                Recommend the next step
+              </dt>
+
+              <dd>
+                Extend hairstyle testing across collars, hoods, and
+                headwear. Document when automatic outfit changes
+                restrict customization, so visual defects and design
+                limitations can be addressed separately.
+              </dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Collection -->
+    <section
+      id="stats"
+      class="case-section"
+      aria-labelledby="stats-title"
+    >
+      <div class="case-section-heading">
+        <p class="eyebrow">
+          02 / The Collection
+        </p>
+
+        <h2 id="stats-title">
+          The numbers behind the work.
+        </h2>
+      </div>
+
+      <div class="case-section-body">
+        <div class="metric-grid">
+          <article class="metric-card">
+            <p>Total Findings</p>
+
+            <strong>50</strong>
+
+            <span>
+              Recorded asset defects, design and UI/UX limitations,
+              and positive observations.
+            </span>
+          </article>
+
+          <article class="metric-card">
+            <p>Games Tested</p>
+
+            <strong>4</strong>
+
+            <span>
+              Games tested were Cyberpunk 2077, Palia, Waterpark
+              Simulator, and Paralives (Early Access).
+            </span>
+          </article>
+
+          <article class="metric-card">
+            <p>Asset Categories</p>
+
+            <strong>8</strong>
+
+            <span>
+              Compared clothing assets such as headwear, hair,
+              shirts, etc.
+            </span>
+          </article>
+
+          <article class="metric-card">
+            <p>Confirmed Defects</p>
+
+            <strong>32</strong>
+
+            <span>
+              Issue severity ranges from minor visual flaws to
+              defects that break the assets.
+            </span>
+          </article>
+        </div>
+
+        <div class="table-panel main-log-panel">
+          <div class="panel-heading">
+            <h3 id="main-log-title">
+              Inside the Main Log
+            </h3>
+
+            <span class="placeholder-label">
+              15 selected findings · 11 original columns
+            </span>
+          </div>
+
+          <p class="main-log-intro">
+            A selection of recorded findings showing how asset
+            interactions, severity, observations, and suggested
+            fixes were documented.
+          </p>
+
+          <p
+            class="main-log-hint"
+            id="main-log-hint"
+          >
+            Scroll horizontally to explore all columns, including
+            detailed notes and suggested fixes. A dash means the
+            field was left blank in the log.
+          </p>
+
+          <div
+            class="table-scroll main-log-scroll"
+            role="region"
+            tabindex="0"
+            aria-labelledby="main-log-title"
+            aria-describedby="main-log-hint"
+          >
+            <table class="main-log-table">
+              <caption>
+                Selected entries from the Main Log. This sample
+                illustrates the collection process and does not
+                represent the full distribution of findings.
+              </caption>
+
+              <thead>
+                <tr>
+                  <th scope="col">Game</th>
+                  <th scope="col">Asset Type</th>
+                  <th scope="col">Asset Subcategory Type</th>
+                  <th scope="col">Interacting Asset</th>
+                  <th scope="col">Issue Type</th>
+                  <th scope="col">Severity</th>
+                  <th scope="col">Issue Summary</th>
+                  <th scope="col">Trigger / Conditions</th>
+                  <th scope="col">Finding Type</th>
+                  <th scope="col">Detailed Notes</th>
+                  <th scope="col">Suggested Fix</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    Paralives (Early Access)
+                  </th>
+
+                  <td>Hair</td>
+                  <td>Hair - Short</td>
+                  <td>Accessories</td>
+                  <td>Clipping</td>
+                  <td>2 - Moderate</td>
+                  <td>Hair clips into eyewear</td>
+                  <td>Eyewear Equipped</td>
+                  <td>Defect</td>
+
+                  <td>
+                    Bangs that are too long and go past the brow
+                    bone into the eyes clip into all glasses.
+                    Sunglasses are the most noticeable.
+                  </td>
+
+                  <td>
+                    <span
+                      class="log-blank"
+                      aria-label="Not recorded"
+                    >
+                      —
+                    </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">
+                    Paralives (Early Access)
+                  </th>
+
+                  <td>Hair</td>
+                  <td>Hair - Long</td>
+                  <td>Jacket</td>
+                  <td>Clipping</td>
+                  <td>2 - Moderate</td>
+                  <td>Hair clips into clothes</td>
+                  <td>Long Hair Equipped</td>
+                  <td>Defect</td>
+
+                  <td>
+                    Long hair clips in the back of the hoodie.
+                    Only noticeable on the sides.
+                  </td>
+
+                  <td>
+                    <span
+                      class="log-blank"
+                      aria-label="Not recorded"
+                    >
+                      —
+                    </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">
+                    Paralives (Early Access)
+                  </th>
+
+                  <td>Shirt</td>
+                  <td>Shirt - Long Sleeve</td>
+                  <td>Jacket</td>
+                  <td>Removes Asset</td>
+                  <td>2 - Moderate</td>
+                  <td>Under shirt removed</td>
+                  <td>Jacket Equipped</td>
+                  <td>Design Limitation</td>
+
+                  <td>
+                    Shirt gets replaced by the jacket instead of
+                    layering on top. This limits the user to use only
+                    what is available and doesn't give them the
+                    creative freedom to style however they want.
+                    This system probably avoids clipping with
+                    clothing.
+                  </td>
+
+                  <td>
+                    <span
+                      class="log-blank"
+                      aria-label="Not recorded"
+                    >
+                      —
+                    </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">
+                    Paralives (Early Access)
+                  </th>
+
+                  <td>Shoes</td>
+                  <td>Shoes - Socks</td>
+
+                  <td>
+                    <span
+                      class="log-blank"
+                      aria-label="Not recorded"
+                    >
+                      —
+                    </span>
+                  </td>
+
+                  <td>Glitching</td>
+                  <td>5 - Missing</td>
+                  <td>Asset selection bug</td>
+                  <td>Asset Selection</td>
+                  <td>UX/UI Limitation</td>
+
+                  <td>
+                    While clicking through the socks and leggings,
+                    there is a bug where only the avatar's left leg
+                    changes with the selected asset. The right leg
+                    has one tall sock that remains the same.
+                  </td>
+
+                  <td>
+                    <span
+                      class="log-blank"
+                      aria-label="Not recorded"
+                    >
+                      —
+                    </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Palia</th>
+                  <td>Hair</td>
+                  <td>Hair - Long</td>
+                  <td>Accessories</td>
+                  <td>Clipping</td>
+                  <td>1 - Mild</td>
+                  <td>Long hair clips into back accessories</td>
+                  <td>Long Hair Equipped</td>
+                  <td>Defect</td>
+
+                  <td>
+                    Hair that goes down the back clips into back
+                    pieces like backpacks and wings.
+                  </td>
+
+                  <td>
+                    Use game physics to have those assets avoid each
+                    other. The hair will fall to one side or the
+                    other.
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Palia</th>
+                  <td>Hair</td>
+                  <td>Hair - Medium</td>
+
+                  <td>
+                    <span
+                      class="log-blank"
+                      aria-label="Not recorded"
+                    >
+                      —
+                    </span>
+                  </td>
+
+                  <td>Removes Asset</td>
+                  <td>1 - Mild</td>
+                  <td>Hair is removed with large head accessories</td>
+                  <td>Large Headwear Equipped</td>
+                  <td>Design Limitation</td>
+
+                  <td>
+                    Outfits that cover the head remove the hair.
+                    No bangs or pieces show on the forehead.
+                  </td>
+
+                  <td>
+                    <span
+                      class="log-blank"
+                      aria-label="Not recorded"
+                    >
+                      —
+                    </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Palia</th>
+                  <td>Pants</td>
+                  <td>Pants - Baggy</td>
+
+                  <td>
+                    <span
+                      class="log-blank"
+                      aria-label="Not recorded"
+                    >
+                      —
+                    </span>
+                  </td>
+
+                  <td>N/A</td>
+                  <td>0 - None</td>
+                  <td>Jacket adapts to baggy pants</td>
+                  <td>Baggy Pants Equipped</td>
+                  <td>Positive Observation</td>
+
+                  <td>
+                    No clipping with baggy pants. Longer coats are
+                    wide enough to avoid clipping. There is also
+                    only one body type, so the waist can be one size
+                    for all assets to avoid clipping. For some
+                    clothes where clipping might occur, the game
+                    forces the pants and top to change simultaneously
+                    with the matching set.
+                  </td>
+
+                  <td>
+                    <span
+                      class="log-blank"
+                      aria-label="Not recorded"
+                    >
+                      —
+                    </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Palia</th>
+                  <td>Hair</td>
+                  <td>Hair - Long</td>
+                  <td>Headwear</td>
+                  <td>Removes Asset</td>
+                  <td>2 - Moderate</td>
+                  <td>Top hair is removed when hat is equipped</td>
+                  <td>Hat Equipped</td>
+                  <td>Design Limitation</td>
+
+                  <td>
+                    The bun is removed when a hat is equipped, but
+                    the hair on the scalp remains the same.
+                  </td>
+
+                  <td>
+                    Move the braided ponytail below the hat so users
+                    don't have to find a new hairstyle.
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Cyberpunk 2077</th>
+                  <td>Shirt</td>
+                  <td>Shirt - Long Sleeve</td>
+
+                  <td>
+                    <span
+                      class="log-blank"
+                      aria-label="Not recorded"
+                    >
+                      —
+                    </span>
+                  </td>
+
+                  <td>Removes Asset</td>
+                  <td>1 - Mild</td>
+                  <td>Sleeves are removed when jacket is equipped</td>
+                  <td>Jacket Equipped</td>
+                  <td>Design Limitation</td>
+
+                  <td>
+                    When a jacket with quarter sleeves is attached,
+                    the long sleeve shirt torso remains the same,
+                    but the sleeves are removed, revealing bare arms
+                    under the quarter-sleeve jacket.
+                  </td>
+
+                  <td>
+                    <span
+                      class="log-blank"
+                      aria-label="Not recorded"
+                    >
+                      —
+                    </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Cyberpunk 2077</th>
+                  <td>Pants</td>
+                  <td>Pants - Skinny Jeans</td>
+
+                  <td>
+                    <span
+                      class="log-blank"
+                      aria-label="Not recorded"
+                    >
+                      —
+                    </span>
+                  </td>
+
+                  <td>N/A</td>
+                  <td>0 - None</td>
+                  <td>Pants adapt to shoes</td>
+                  <td>Baggy Pants Equipped</td>
+                  <td>Positive Observation</td>
+
+                  <td>
+                    The bottom of the pants perfectly fits all shoe
+                    types with no clipping.
+                  </td>
+
+                  <td>
+                    <span
+                      class="log-blank"
+                      aria-label="Not recorded"
+                    >
+                      —
+                    </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Cyberpunk 2077</th>
+                  <td>Jacket</td>
+                  <td>Jacket - Coat</td>
+
+                  <td>
+                    <span
+                      class="log-blank"
+                      aria-label="Not recorded"
+                    >
+                      —
+                    </span>
+                  </td>
+
+                  <td>N/A</td>
+                  <td>0 - None</td>
+                  <td>Long jackets adapt to baggy pants</td>
+                  <td>Jacket Equipped</td>
+                  <td>Positive Observation</td>
+
+                  <td>
+                    Long jackets that go past the thighs do not have
+                    any clipping with the pants.
+                  </td>
+
+                  <td>
+                    <span
+                      class="log-blank"
+                      aria-label="Not recorded"
+                    >
+                      —
+                    </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Cyberpunk 2077</th>
+                  <td>Headwear</td>
+                  <td>Headwear - Hat</td>
+
+                  <td>
+                    <span
+                      class="log-blank"
+                      aria-label="Not recorded"
+                    >
+                      —
+                    </span>
+                  </td>
+
+                  <td>Removes Asset</td>
+                  <td>3 - High</td>
+                  <td>Hair appearance changes when hat is equipped</td>
+                  <td>Hat Equipped</td>
+                  <td>Design Limitation</td>
+
+                  <td>
+                    When a hat is equipped on buzzed sides with hair
+                    on top, the avatar suddenly grows a lot of hair
+                    underneath the hat. When a full helmet is
+                    equipped, the hair is removed completely.
+                  </td>
+
+                  <td>
+                    <span
+                      class="log-blank"
+                      aria-label="Not recorded"
+                    >
+                      —
+                    </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Waterpark Simulator</th>
+                  <td>Hair</td>
+                  <td>Hair - Long</td>
+
+                  <td>
+                    <span
+                      class="log-blank"
+                      aria-label="Not recorded"
+                    >
+                      —
+                    </span>
+                  </td>
+
+                  <td>Removes Asset</td>
+                  <td>4 - Extreme</td>
+                  <td>Hair appearance changes when hat is equipped</td>
+                  <td>Hat Equipped</td>
+                  <td>Design Limitation</td>
+
+                  <td>
+                    When a hat is equipped, all hairstyles are
+                    removed and the only look is a buzzed head.
+                    None of the hairstyles change the appearance
+                    of the default buzzed haircut.
+                  </td>
+
+                  <td>
+                    <span
+                      class="log-blank"
+                      aria-label="Not recorded"
+                    >
+                      —
+                    </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Waterpark Simulator</th>
+                  <td>Shirt</td>
+                  <td>Shirt - Short Sleeve</td>
+                  <td>Shirt</td>
+                  <td>Clipping</td>
+                  <td>4 - Extreme</td>
+                  <td>Bigger bodies have more clipping</td>
+                  <td>Large Body Type</td>
+                  <td>Defect</td>
+
+                  <td>
+                    Thick oversized T-shirt. Female clothes have
+                    fewer issues with clipping than male clothes.
+                    When the body is bigger, the hands and lower arms
+                    clip into the sides of the character. When the
+                    body is smaller, the upper arms clip into the
+                    torso. Nothing can remove the clipping.
+                  </td>
+
+                  <td>
+                    <span
+                      class="log-blank"
+                      aria-label="Not recorded"
+                    >
+                      —
+                    </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Waterpark Simulator</th>
+                  <td>Headwear</td>
+                  <td>Headwear - Sunglasses</td>
+                  <td>Headwear</td>
+                  <td>Clipping</td>
+                  <td>2 - Moderate</td>
+                  <td>Glasses clip into headwear</td>
+                  <td>Eyewear Equipped</td>
+                  <td>Defect</td>
+
+                  <td>
+                    Large glasses clip into the headwear.
+                  </td>
+
+                  <td>
+                    <span
+                      class="log-blank"
+                      aria-label="Not recorded"
+                    >
+                      —
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Analysis -->
+    <section
+      id="analysis"
+      class="case-section"
+      aria-labelledby="analysis-title"
+    >
+      <div class="case-section-heading">
+        <p class="eyebrow">
+          03 / Graphs &amp; Tables
+        </p>
+
+        <h2 id="analysis-title">
+          Turn the data into a story.
+        </h2>
+
+        <p>
+          Connect patterns in the data to practical decisions.
+        </p>
+      </div>
+
+      <div class="case-section-body">
+        <div class="dashboard-chart-grid">
+          <figure class="chart-panel dashboard-chart">
+            <div class="panel-heading">
+              <h3>Finding Classification</h3>
+            </div>
+
+            <div class="classification-layout">
+              <div
+                class="classification-donut"
+                style="background: conic-gradient(#a98cff 0% 64%, #ff8dd8 64% 84%, #6fd6ff 84% 92%, #9af2cb 92% 100%);"
+                aria-hidden="true"
+              >
+                <span>
+                  <strong>50</strong>
+                  findings
+                </span>
+              </div>
+
+              <ul class="chart-legend">
+                <li>
+                  <span
+                    class="chart-key"
+                    style="background: #a98cff;"
+                    aria-hidden="true"
+                  ></span>
+
+                  <span>Confirmed Defects</span>
+
+                  <strong>
+                    32 <small>(64%)</small>
+                  </strong>
+                </li>
+
+                <li>
+                  <span
+                    class="chart-key"
+                    style="background: #ff8dd8;"
+                    aria-hidden="true"
+                  ></span>
+
+                  <span>Design Limitations</span>
+
+                  <strong>
+                    10 <small>(20%)</small>
+                  </strong>
+                </li>
+
+                <li>
+                  <span
+                    class="chart-key"
+                    style="background: #6fd6ff;"
+                    aria-hidden="true"
+                  ></span>
+
+                  <span>UI/UX Limitations</span>
+
+                  <strong>
+                    4 <small>(8%)</small>
+                  </strong>
+                </li>
+
+                <li>
+                  <span
+                    class="chart-key"
+                    style="background: #9af2cb;"
+                    aria-hidden="true"
+                  ></span>
+
+                  <span>Positive Observations</span>
+
+                  <strong>
+                    4 <small>(8%)</small>
+                  </strong>
+                </li>
+              </ul>
+            </div>
+
+            <figcaption>
+              All 50 recorded findings, grouped by finding type.
+            </figcaption>
+          </figure>
+
+          <figure class="chart-panel dashboard-chart">
+            <div class="panel-heading">
+              <h3>Rated Issues by Asset Type</h3>
+            </div>
+
+            <ul class="horizontal-chart">
+              <li>
+                <span class="bar-label">Headwear</span>
+
+                <div
+                  class="bar-track"
+                  aria-hidden="true"
+                >
+                  <span style="width: 46.6667%;"></span>
+                </div>
+
+                <strong>7</strong>
+              </li>
+
+              <li>
+                <span class="bar-label">Hair</span>
+
+                <div
+                  class="bar-track"
+                  aria-hidden="true"
+                >
+                  <span style="width: 100%;"></span>
+                </div>
+
+                <strong>15</strong>
+              </li>
+
+              <li>
+                <span class="bar-label">Jacket</span>
+
+                <div
+                  class="bar-track"
+                  aria-hidden="true"
+                >
+                  <span style="width: 20%;"></span>
+                </div>
+
+                <strong>3</strong>
+              </li>
+
+              <li>
+                <span class="bar-label">Dress</span>
+
+                <div
+                  class="bar-track"
+                  aria-hidden="true"
+                >
+                  <span style="width: 6.6667%;"></span>
+                </div>
+
+                <strong>1</strong>
+              </li>
+
+              <li>
+                <span class="bar-label">Shirt</span>
+
+                <div
+                  class="bar-track"
+                  aria-hidden="true"
+                >
+                  <span style="width: 20%;"></span>
+                </div>
+
+                <strong>3</strong>
+              </li>
+
+              <li>
+                <span class="bar-label">Pants</span>
+
+                <div
+                  class="bar-track"
+                  aria-hidden="true"
+                >
+                  <span style="width: 13.3333%;"></span>
+                </div>
+
+                <strong>2</strong>
+              </li>
+
+              <li>
+                <span class="bar-label">Shoes</span>
+
+                <div
+                  class="bar-track"
+                  aria-hidden="true"
+                >
+                  <span style="width: 20%;"></span>
+                </div>
+
+                <strong>3</strong>
+              </li>
+
+              <li>
+                <span class="bar-label">Accessories</span>
+
+                <div
+                  class="bar-track"
+                  aria-hidden="true"
+                >
+                  <span style="width: 60%;"></span>
+                </div>
+
+                <strong>9</strong>
+              </li>
+            </ul>
+
+            <p class="chart-scale">
+              Scale: 0–15 · recorded issues
+            </p>
+
+            <figcaption>
+              Recorded issues rated 1–5, using the Dashboard’s
+              asset-type breakdown.
+            </figcaption>
+          </figure>
+
+          <figure class="chart-panel dashboard-chart">
+            <div class="panel-heading">
+              <h3>Rated Issues by Game</h3>
+            </div>
+
+            <ul class="column-chart">
+              <li>
+                <strong>8</strong>
+
+                <div
+                  class="column-track"
+                  aria-hidden="true"
+                >
+                  <span style="height: 40%;"></span>
+                </div>
+
+                <span>Cyberpunk 2077</span>
+              </li>
+
+              <li>
+                <strong>8</strong>
+
+                <div
+                  class="column-track"
+                  aria-hidden="true"
+                >
+                  <span style="height: 40%;"></span>
+                </div>
+
+                <span>Palia</span>
+              </li>
+
+              <li>
+                <strong>10</strong>
+
+                <div
+                  class="column-track"
+                  aria-hidden="true"
+                >
+                  <span style="height: 50%;"></span>
+                </div>
+
+                <span>Waterpark Simulator</span>
+              </li>
+
+              <li>
+                <strong>18</strong>
+
+                <div
+                  class="column-track"
+                  aria-hidden="true"
+                >
+                  <span style="height: 90%;"></span>
+                </div>
+
+                <span>Paralives (Early Access)</span>
+              </li>
+            </ul>
+
+            <p class="chart-scale">
+              Scale: 0–20 recorded issues
+            </p>
+
+            <figcaption>
+              Recorded issues rated 1–5. Sample sizes differ between
+              games; these counts are not game-wide defect rates.
+            </figcaption>
+          </figure>
+
+          <figure class="chart-panel dashboard-chart severity-chart">
+            <div class="panel-heading">
+              <h3>
+                Average Defect Severity by Game
+              </h3>
+            </div>
+
+            <ul class="horizontal-chart">
+              <li>
+                <span class="bar-label">Cyberpunk 2077</span>
+
+                <div
+                  class="bar-track"
+                  aria-hidden="true"
+                >
+                  <span style="width: 45%;"></span>
+                </div>
+
+                <strong>2.25</strong>
+              </li>
+
+              <li>
+                <span class="bar-label">Palia</span>
+
+                <div
+                  class="bar-track"
+                  aria-hidden="true"
+                >
+                  <span style="width: 33.3333%;"></span>
+                </div>
+
+                <strong>1.67</strong>
+              </li>
+
+              <li>
+                <span class="bar-label">
+                  Paralives (Early Access)
+                </span>
+
+                <div
+                  class="bar-track"
+                  aria-hidden="true"
+                >
+                  <span style="width: 40%;"></span>
+                </div>
+
+                <strong>2.00</strong>
+              </li>
+
+              <li>
+                <span class="bar-label">
+                  Waterpark Simulator
+                </span>
+
+                <div
+                  class="bar-track"
+                  aria-hidden="true"
+                >
+                  <span style="width: 44.4444%;"></span>
+                </div>
+
+                <strong>2.22</strong>
+              </li>
+            </ul>
+
+            <p class="chart-scale">
+              Scale: 0–5 · average severity
+            </p>
+
+            <figcaption>
+              Confirmed defects only, on the workbook’s 0–5 severity
+              scale. Values rounded to two decimals.
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="table-panel category-panel">
+          <div class="panel-heading">
+            <h3 id="category-title">
+              Findings by category
+            </h3>
+
+            <span class="placeholder-label">
+              Stats / Per Asset
+            </span>
+          </div>
+
+          <div
+            class="table-scroll"
+            role="region"
+            tabindex="0"
+            aria-labelledby="category-title"
+          >
+            <table class="category-table">
+              <caption>
+                Asset-category breakdown from Stats. Average defect
+                severity is rounded to two decimals.
+              </caption>
+
+              <thead>
+                <tr>
+                  <th scope="col">Asset Type</th>
+                  <th scope="col">Total Findings</th>
+                  <th scope="col">Defects</th>
+                  <th scope="col">Design Limitations</th>
+                  <th scope="col">UI/UX Limitations</th>
+                  <th scope="col">Positive Observations</th>
+
+                  <th scope="col">
+                    Average Defect Severity (0–5)
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <th scope="row">Accessories</th>
+                  <td>9</td>
+                  <td>8</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>1.75</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Dress</th>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>2.00</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Hair</th>
+                  <td>16</td>
+                  <td>10</td>
+                  <td>5</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>2.00</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Headwear</th>
+                  <td>8</td>
+                  <td>6</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>1.83</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Jacket</th>
+                  <td>4</td>
+                  <td>2</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>2.50</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Pants</th>
+                  <td>4</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>2.00</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Shirt</th>
+                  <td>3</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>4.00</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Shoes</th>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>2.50</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="category-note">
+            The category table covers 48 findings. Two of the 50
+            Main Log entries have no Asset Type recorded and are
+            not included in this breakdown.
+          </p>
+        </div>
+
+        <div class="insight-callout">
+          <p class="eyebrow">
+            What the data tells us
+          </p>
+
+          <p class="content-prompt">
+            Hair assets have the highest rate of issues. Other assets,
+            such as Accessories and Headwear, that interact with the
+            hair are immediately broken.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quality Report -->
+    <section
+      id="report"
+      class="case-section"
+      aria-labelledby="report-title"
+    >
+      <div class="case-section-heading">
+        <p class="eyebrow">
+          04 / Quality Report
+        </p>
+
+        <h2 id="report-title">
+          Game Cosmetics Quality Report
+        </h2>
+      </div>
+
+      <div class="case-section-body">
+        <div class="report-introduction">
+          <p>
+            More details about the report can be reviewed
+
+            <a
+              class="text-link"
+              href="assets/game-cosmetics-quality-report.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              here
+
+              <span aria-hidden="true">
+                ↗
+              </span>
+            </a>.
+          </p>
+        </div>
+
+        <article class="report-panel report-chapter">
+          <h3>Summary</h3>
+
+          <h4>Challenge</h4>
+
+          <p>
+            This study compares how character cosmetics work
+            together in four 3D games. It looks at visual bugs,
+            customization limits, and opportunities to improve
+            the experience.
+          </p>
+
+          <h4>Testing Approach</h4>
+
+          <p>
+            Different combinations of hair, clothing, hats, shoes,
+            and accessories were tested. Results were recorded in
+            the QA Log, with each bug rated by severity.
+          </p>
+
+          <div
+            class="table-scroll"
+            role="region"
+            tabindex="0"
+            aria-label="Report game summary"
+          >
+            <table class="report-summary-table">
+              <caption>
+                The table summarizes each game's findings, most
+                common problem area, and average bug severity.
+              </caption>
+
+              <thead>
+                <tr>
+                  <th scope="col">Game</th>
+                  <th scope="col">Total Findings</th>
+                  <th scope="col">Highest Asset Category</th>
+
+                  <th scope="col">
+                    Average Defect Severity (0–5)
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <th scope="row">Cyberpunk 2077</th>
+                  <td>10</td>
+                  <td>Hair</td>
+                  <td>2.25</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">Palia</th>
+                  <td>10</td>
+                  <td>Hair</td>
+                  <td>1.67</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">
+                    Paralives (Early Access)
+                  </th>
+
+                  <td>20</td>
+                  <td>Accessories</td>
+                  <td>2.00</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">
+                    Waterpark Simulator
+                  </th>
+
+                  <td>10</td>
+                  <td>Headwear &amp; Hair</td>
+                  <td>2.22</td>
+                </tr>
+              </tbody>
+
+              <tfoot>
+                <tr>
+                  <th scope="row">Total</th>
+                  <td>50</td>
+                  <td>—</td>
+                  <td>—</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </article>
+
+        <article class="report-panel report-chapter">
+          <h3>Findings Breakdown</h3>
+
+          <p>
+            Testing produced 50 findings across four games. Of these,
+            32 were bugs. The other 18 covered customization limits,
+            menu issues, and features that worked well.
+          </p>
+
+          <h4>
+            Confirmed Defects — 32 findings
+          </h4>
+
+          <p>
+            Visual bugs or items that did not work correctly. Each
+            bug was rated from 1 (minor) to 5 (major).
+          </p>
+
+          <h4>
+            Design Limitations — 10 findings
+          </h4>
+
+          <p>
+            Limits on what players can combine, such as a shirt
+            disappearing when a jacket is equipped. These are not
+            always bugs.
+          </p>
+
+          <h4>
+            UI/UX Limitations — 4 findings
+          </h4>
+
+          <p>
+            Menu features that could be easier to find or use.
+          </p>
+
+          <h4>
+            Positive Observations — 4 findings
+          </h4>
+
+          <p>
+            Examples where items worked well together or adjusted
+            to prevent clipping.
+          </p>
+
+          <p>
+            Paralives had the most findings, but also offered more
+            customization options to test. A higher finding count
+            does not automatically mean lower game quality.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Reflection -->
+    <section
+      id="reflection"
+      class="case-section"
+      aria-labelledby="reflection-title"
+    >
+      <div class="case-section-heading">
+        <p class="eyebrow">
+          05 / Reflection
+        </p>
+
+        <h2 id="reflection-title">
+          What I’d carry forward.
+        </h2>
+      </div>
+
+      <div class="case-section-body">
+        <div class="narrative-block reflection-conclusion">
+          <h3>Conclusion</h3>
+
+          <p>
+            These results reflect the combinations tested, rather
+            than every possible outfit or the overall quality of
+            each game.
+          </p>
+
+          <p>
+            Across the four games, hair assets caused the most
+            cosmetic compatibility issues, especially when paired
+            with hats, glasses, and clothing. Some games avoided
+            clipping by changing or hiding parts of an outfit or
+            hairstyle. While this helped items fit together, it
+            sometimes limited the player's customization choices.
+          </p>
+
+          <p>
+            The findings point to two useful areas for improvement:
+          </p>
+
+          <ol class="reflection-improvements">
+            <li>
+              Testing more combinations of overlapping items
+            </li>
+
+            <li>
+              Making sure automatic changes do not unnecessarily
+              restrict player choice
+            </li>
+          </ol>
+        </div>
+
+        <a
+          class="button button-secondary"
+          href="index.html#work"
+        >
+          ← Back to selected work
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <p>
+      Designed and built by Autumn Hadley.
+    </p>
+
+    <a
+      class="text-link"
+      href="#top"
+    >
+      Back to top
+
+      <span aria-hidden="true">
+        ↑
+      </span>
+    </a>
+  </footer>
+</body>
+</html>
