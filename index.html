@@ -79,7 +79,21 @@
 
   <main id="top">
     <!-- Hero Section -->
-    <section class="hero section-shell">
+    <section class="hero" aria-label="Introduction">
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        playsinline
+        loop
+        aria-hidden="true"
+      >
+        <source
+          src="assets/LandingPage.mov"
+          media="(prefers-reduced-motion: no-preference)"
+        />
+      </video>
+
       <div class="hero-copy">
         <p class="eyebrow">
           Designer · Creator · Problem Solver
@@ -93,8 +107,8 @@
         </h1>
 
         <p class="hero-intro">
-         Hi, I’m Autumn. A versatile designer who 
-          combines creativity and functionality to 
+          Hi, I’m Autumn. A versatile designer who
+          combines creativity and functionality to
           make digital experiences for humans.
         </p>
 
@@ -125,50 +139,6 @@
           <li>Illustration</li>
         </ul>
       </div>
-
-          <!-- App GIF Preview -->
-          <div class="hero-visual">
-            <div
-              class="visual-glow"
-              aria-hidden="true"
-            ></div>
-    
-          <div class="demo-window">
-          <div class="gif-frame">
-              <!-- Your preview image and fallback are here -->
-          </div>
-
-         <!-- Separate description card below the preview -->
-          <div class="preview-description-card">
-            <div>
-              <p class="demo-label">
-                Current project
-              </p>
-          
-              <h2>Emote Studio</h2>
-            </div>
-          
-            <p>
-              A customizable desktop tool that helps streamers
-              create expressive emotes without needing advanced
-              illustration software.
-            </p>
-          </div>
-
-            <img
-              src="assets/emote-studio-demo.gif"
-              alt=""
-            />
-
-            <div class="gif-fallback">
-              <p>Add your app GIF here</p>
-
-              <span>
-                assets/emote-studio-demo.gif
-              </span>
-            </div>
-          </div>
-      </div>
     </section>
 
     <!-- Selected Work -->
@@ -188,15 +158,18 @@
         </div>
 
         <p>
-          A collection of visual work, creative 
+          A collection of visual work, creative
           experiments, and practical solutions.
         </p>
       </div>
 
       <div class="project-grid">
-        
         <!-- Project One -->
-        <article class="project-card project-card-featured">
+        <a
+          class="project-card project-card-featured"
+          href="mimi-emote-studios.html"
+          aria-labelledby="mimi-project-title"
+        >
           <div class="project-number">
             01
           </div>
@@ -206,12 +179,13 @@
               Product Design · Customizable Emotes
             </p>
 
-            <h3>
-              Mimi Emote Studios
+            <h3 id="mimi-project-title">
+              Twitch Emote Creator
             </h3>
 
             <p>
-              Creating a modular system for non-artists to design custom Twitch emotes.
+              Creating a modular system for non-artists to
+              design custom Twitch emotes.
             </p>
 
             <ul class="tag-list">
@@ -219,62 +193,50 @@
               <li>UI design</li>
               <li>User testing</li>
             </ul>
-
-            <!-- Replace # with your case-study page later -->
-            <a
-              class="text-link"
-              href="#"
-            >
-              View project
-
-              <span aria-hidden="true">
-                ↗
-              </span>
-            </a>
           </div>
 
-          <div>
+          <div
+            class="project-card-art app-art"
+            aria-hidden="true"
+          >
+            <div class="floating-panel panel-one">
+              <img
+                src="assets/Project1-3.png"
+                alt=""
+              />
+            </div>
 
-        <div
-          class="project-card-art app-art"
-          aria-hidden="true"
-        >
-        <div class="floating-panel panel-one">
-        <img
-          src="assets/Project1-3.png"
-          alt=""
-        />
-        </div>
-    
-        <div class="floating-panel panel-two">
-        <img
-          src="assets/Project1-1.png"
-          alt=""
-        />
-      </div>
-    
-      <div class="floating-panel panel-three">
-        <img
-          src="assets/Project1-2.png"
-          alt=""
-        />
-      </div>
-    </div>
-    </article>
+            <div class="floating-panel panel-two">
+              <img
+                src="assets/Project1-1.png"
+                alt=""
+              />
+            </div>
 
-<!-- Project Two -->
+            <div class="floating-panel panel-three">
+              <img
+                src="assets/Project1-2.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </a>
 
         <!-- Project Two -->
-        <article class="project-card project-card-with-preview">
-          <!-- Project 02 preview image -->
-        <div class="project-preview">
-          <img
-            src="assets/Project2c.png"
-            alt=""
-          />
-        </div>
+        <a
+          class="project-card project-card-with-preview"
+          href="quality-systems.html"
+          aria-labelledby="data-project-title"
+        >
           <div class="project-number">
             02
+          </div>
+
+          <div class="project-preview">
+            <img
+              src="assets/Project2c.png"
+              alt=""
+            />
           </div>
 
           <div class="project-card-content">
@@ -282,12 +244,12 @@
               Data Analysis · Quality Improvement
             </p>
 
-            <h3>
+            <h3 id="data-project-title">
               Data Solutions
             </h3>
 
             <p>
-              Using data to discover trends, identify problems, 
+              Using data to discover trends, identify problems,
               and create solutions that improve quality.
             </p>
 
@@ -296,32 +258,24 @@
               <li>Performance Review</li>
               <li>Data Visualization</li>
             </ul>
-
-            <!-- Replace # with your case-study page later -->
-            <a
-              class="text-link"
-              href="#"
-            >
-              View case study
-
-              <span aria-hidden="true">
-                ↗
-              </span>
-            </a>
           </div>
-        </article>
+        </a>
 
         <!-- Project Three -->
-        <article class="project-card project-card-with-preview">
-          <!-- Project 03 preview image -->
-          <div class="project-preview">
-            <img
-              src="assets/stylized-worlds-preview.jpg"
-              alt=""
-            />
-          </div>
+        <a
+          class="project-card project-card-with-preview"
+          href="creative-work.html"
+          aria-labelledby="creative-project-title"
+        >
           <div class="project-number">
             03
+          </div>
+
+          <div class="project-preview">
+            <img
+              src="assets/Project3.png"
+              alt=""
+            />
           </div>
 
           <div class="project-card-content">
@@ -329,12 +283,13 @@
               Design · Illustration
             </p>
 
-            <h3>
+            <h3 id="creative-project-title">
               Creative Work
             </h3>
 
             <p>
-              Exploring ideas through design, illustration, motion, and 3D.
+              Exploring ideas through design, illustration,
+              motion, and 3D.
             </p>
 
             <ul class="tag-list">
@@ -342,20 +297,8 @@
               <li>Photoshop</li>
               <li>Blender</li>
             </ul>
-
-            <!-- Replace # with your project page later -->
-            <a
-              class="text-link"
-              href="#"
-            >
-              Explore projects
-
-              <span aria-hidden="true">
-                ↗
-              </span>
-            </a>
           </div>
-        </article>
+        </a>
       </div>
     </section>
 
@@ -365,31 +308,30 @@
       class="about-section section-shell"
     >
       <div class="about-card">
-        <div>
+        <div class="about-copy">
           <p class="eyebrow">
             About me
           </p>
 
           <h2>
-            I love using my imagination to make 
+            I love using my imagination to make
             impossible into something real.
           </h2>
-        </div>
 
-        <div class="about-copy">
           <p>
-            I’ve always been drawn to the possibilities of 
-            creating something that didn’t exist before. 
-            Whether I’m designing, illustrating, modeling, 
-            animating, or building a digital product, I love 
-            exploring different ways to transform what I imagine 
+            I’ve always been drawn to the possibilities of
+            creating something that didn’t exist before.
+            Whether I’m designing, illustrating, modeling,
+            animating, or building a digital product, I love
+            exploring different ways to transform what I imagine
             into something others can experience.
           </p>
 
           <p>
-            Curiosity keeps me exploring new creative projects 
-            and learning along the way. I’m not afraid of unfamiliar 
-            challenges because they’re often where I discover my favorite ideas.
+            Curiosity keeps me exploring new creative projects
+            and learning along the way. I’m not afraid of unfamiliar
+            challenges because they’re often where I discover my
+            favorite ideas.
           </p>
 
           <a
@@ -412,50 +354,50 @@
       id="contact"
       class="contact-section section-shell"
     >
-    <div class="contact-card">
-  <div class="contact-photo-wrap">
-    <img
-      class="contact-photo"
-      src="https://avatars.githubusercontent.com/u/307784868?v=4"
-      alt="Portrait of Autumn Hadley"
-    />
-  </div>
+      <div class="contact-card">
+        <div class="contact-photo-wrap">
+          <img
+            class="contact-photo"
+            src="https://avatars.githubusercontent.com/u/307784868?v=4"
+            alt="Portrait of Autumn Hadley"
+          />
+        </div>
 
-  <div class="contact-copy">
-    <p class="eyebrow">
-      Let’s create something together
-    </p>
+        <div class="contact-copy">
+          <p class="eyebrow">
+            Let’s create something together
+          </p>
 
-    <h2>
-      Have an idea? Let’s make it real.
-    </h2>
+          <h2>
+            Have an idea? Let’s make it real.
+          </h2>
 
-    <p>
-      I’m open to creative roles, collaborative projects, 
-      and opportunities to explore something new.
-    </p>
-  </div>
+          <p>
+            I’m open to creative roles, collaborative projects,
+            and opportunities to explore something new.
+          </p>
+        </div>
 
-  <div class="contact-links">
-    <!-- Replace this with your actual email -->
-    <a
-      class="button button-primary"
-      href="mailto:your-email@example.com"
-    >
-      Email me
-    </a>
+        <div class="contact-links">
+          <!-- Replace this with your actual email -->
+          <a
+            class="button button-primary"
+            href="mailto:your-email@example.com"
+          >
+            Email me
+          </a>
 
-    <!-- Replace # with your LinkedIn URL -->
-    <a
-      class="button button-secondary"
-      href="#"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      LinkedIn
-    </a>
-  </div>
-</div>
+          <!-- Replace # with your LinkedIn URL -->
+          <a
+            class="button button-secondary"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
